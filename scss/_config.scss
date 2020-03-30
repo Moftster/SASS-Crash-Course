@@ -1,6 +1,6 @@
 $font-stack: Arial, Helvetica, sans-serif;
 $light-color: #f4f4f4;
-$primary-color: #e0ffff;
+$primary-color: #0e6cff;
 // $primary-color: #0e6cff;
 $secondary-color: #ff8700;
 
@@ -13,3 +13,10 @@ $secondary-color: #ff8700;
         @return #fff;
     }
 }
+
+// Set background & text color
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color);
+}
+
